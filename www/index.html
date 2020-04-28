@@ -21,7 +21,7 @@
  
             //Google Maps
               myLatlng = new google.maps.LatLng( lat, lng ),
-              mapOptions = { zoom: 3, center: myLatlng },
+              mapOptions = { zoom: 18, center: myLatlng, mapTypeId: 'hybrid' },
               map = new google.maps.Map( document.getElementById( 'map-canvas' ), mapOptions ),
               marker = new google.maps.Marker( { position: myLatlng, map: map } );
          }
